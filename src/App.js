@@ -10,7 +10,10 @@ const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com');
 // Each resource maps a NAME to an ENDPOINT. 
 const App = () => (
   <Admin dataProvider={dataProvider}>
-    <Resource name="users" list={ListGuesser} />
+    <Resource 
+      name="users" 
+      list={ListGuesser} 
+    />
   </Admin>
 )
 export default App;
